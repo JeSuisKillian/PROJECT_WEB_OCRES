@@ -9,7 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.1.16",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0",
+    "react-scripts": "^4.0.3",
     "recharts": "^2.1.6"
   },
   "scripts": {
@@ -36,9 +36,9 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-actions": "^6.4.4",
     "@storybook/addon-links": "^5.2.6",
     "@storybook/addons": "^5.2.6",
-    "@storybook/react": "^5.2.6"
+    "@storybook/react": "^6.4.4"
   }
 }

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
 .App {
-  background-color: #282c34;
-  background-image: url('bird.png');
+  background-color: #778ca3;
+  background-image: url('images/bird.png');
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -29,10 +29,16 @@
   width: 100px;
 }
 
+.menu-content {
+  position: fixed;
+  width: calc(20% - 16px);
+}
+
 .menu {
   position: relative;
   flex-basis: 20%;
-  background-color:#130f40;
+  width: 20%;
+  background-color:#4b6584;
 }
 
 .menu ul {
@@ -54,7 +60,7 @@
 }
 
 .menu li.active {
-  background-color: #282c34;
+  background-color: #778ca3;
   border-left: 2px solid #ffffff;
   color: #ffffff;
 }
@@ -63,7 +69,7 @@
   position: absolute;
   bottom: 10px;
   font-size: 18px;
-  color: #3fad5d;
+  color: #f7b731;
   text-align: center;
   width: 100%;
 }
@@ -74,12 +80,34 @@
 
 .dashboard {
   flex-basis: 80%;
-  background-color: rgba(255, 255, 255, 0.2)
+  background-color: rgba(255, 255, 255, 0.363)
+  
 }
 
 .graphmodule {
-  width: 100%;
-  height: 400px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 350px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 140px;
+  border: solid;
+  border-color: #f7b731;
+  background-color: rgba(197, 137, 7, 0.55);
+  text-align: center;
+}
+
+.graphmodule-formula {
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.graphmodule-formula ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .copyright {
@@ -92,7 +120,7 @@
 
 .widget {
   border-radius: 30px;
-  background-color: #e74c3c;
+  background-color: #f7b731;
   color: #ffffff;
   width: 300px;
   padding: 20px;
