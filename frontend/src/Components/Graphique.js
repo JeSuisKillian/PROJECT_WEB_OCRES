@@ -3,45 +3,45 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 
 const data = [
     {
-        name: 'juin 2021',
-        likes: 4000,
-        abos: 2400,
+        name: '06/21',
+        Hamilton: 4000,
+        Verstappen: 2400,
         amt: 2400,
     },
     {
-        name: 'juillet 2021',
-        likes: 3000,
-        abos: 1398,
+        name: '07/21',
+        Hamilton: 3000,
+        Verstappen: 1398,
         amt: 2210,
     },
     {
-        name: 'aout 2021',
-        likes: 2000,
-        abos: 9800,
+        name: '08/21',
+        Hamilton: 2000,
+        Verstappen: 9800,
         amt: 2290,
     },
     {
-        name: 'septembre 2021',
-        likes: 2780,
-        abos: 3908,
+        name: '09/21',
+        Hamilton: 2780,
+        Verstappen: 3908,
         amt: 2000,
     },
     {
-        name: 'octobre 2021',
-        likes: 1890,
-        abos: 4800,
+        name: '10/21',
+        Hamilton: 1890,
+        Verstappen: 4800,
         amt: 2181,
     },
     {
-        name: 'novembre 2021',
-        likes: 2390,
-        abos: 3800,
+        name: '11/21',
+        Hamilton: 2390,
+        Verstappen: 3800,
         amt: 2500,
     },
     {
-        name: 'Page G',
-        likes: 3490,
-        abos: 4300,
+        name: '12/21',
+        Hamilton: 3490,
+        Verstappen: 4300,
         amt: 2100,
     },
 ];
@@ -67,8 +67,8 @@ class Graphique extends PureComponent {
                     <YAxis />
                     <Tooltip />
                     <Legend />
-                    <Line type="monotone" dataKey="likes" stroke="#8884d8" activeDot={{ r: 8 }} />
-                    <Line type="monotone" dataKey="abos" stroke="#82ca9d" />
+                    <Line type="monotone" dataKey="Hamilton" stroke="#8884d8" activeDot={{ r: 8 }} />
+                    <Line type="monotone" dataKey="Verstappen" stroke="#82ca9d" />
                 </LineChart>
             </ResponsiveContainer>
         );

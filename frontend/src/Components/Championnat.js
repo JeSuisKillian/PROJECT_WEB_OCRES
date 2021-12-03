@@ -18,13 +18,15 @@ export default function Championnat() {
 
   }, [])
   return (
-    <ul>
+    <ul className="column_gap">
       Season : {race.season}<br />
       Round : {race.round}<br /><br />
       {(typeof race.DriverStandings != 'undefined') ? (
         race.DriverStandings.map((item) => (
 
-          <p key={item.position}>{item.Driver.givenName}&nbsp;{item.Driver.familyName}&nbsp;&nbsp;&nbsp;{item.points}&nbsp; wins : {item.wins} </p>
+          <li
+            key={item.position}>{item.Driver.givenName}&nbsp;{item.Driver.familyName}&nbsp;&nbsp;&nbsp;{item.points}&nbsp; wins : {item.wins}
+          </li>
         )
         )) :
         (

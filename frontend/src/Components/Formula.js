@@ -18,16 +18,21 @@ export default function Formula() {
 
   }, [])
   return (
+
+
     <ul>
-      {(typeof post != 'undefined') ? (
-        post.map((item) => (
-          <li>
-            {item.familyName}&nbsp;{item.givenName}
-          </li>
-        ))) :
-        (
-          <li>Chargement des données ....</li>
-        )}
+      {<ul className="center" >2021 <br /><br /></ul>}
+      <ul className="column_gap">
+        {(typeof post != 'undefined') ? (
+          post.map((item) => (
+            <li>
+              {item.permanentNumber}&nbsp; | {item.familyName}&nbsp;{item.givenName}
+            </li>
+          ))) :
+          (
+            <li>Chargement des données ....</li>
+          )}
+      </ul>
 
     </ul>
   )
