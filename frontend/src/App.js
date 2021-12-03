@@ -1,6 +1,7 @@
 import React from 'react';
 import Graphique from './Components/Graphique'
 import Formula from './Components/Formula'
+import Circuit from './Components/Circuit'
 import Championnat from './Components/Championnat'
 import Widget from './Components/Widget'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -37,13 +38,13 @@ function App() {
         </div>
         <div className="dashboard">
           <div className="widgetmodule">
-            <div className="graphmodule graphmodule-formula"><h2>Liste des pilotes</h2><Formula /></div>
-            <div className="graphmodule graphmodule-formula"><h2>Dernier resultat</h2><LastResult /></div>
+            <div className="graphmodule graphmodule-formula"><br /><h2>Liste des pilotes</h2><Formula /></div>
+            <div className="graphmodule graphmodule-formula"><br /><h2>Dernier résultat</h2><LastResult /></div>
           </div>
-          <div className="graphmodule"><h2>Information prochain circuit</h2><Graphique /></div>
-          <div className="graphmodule"><h2>Course aux points</h2><Graphique name="Coursepoints" /></div>
-          <div className="graphmodule"><h2>Classement des conducteurs</h2><Graphique name="Dernierresultat" /></div>
-          <div className="graphmodule"><h2>Notre API</h2><Graphique name="Notreapi" /></div>
+          <div className="graphmodule"><br /><h2>Informations sur le prochain circuit</h2><Circuit /></div>
+          <div className="graphmodule"><br /><h2>Course aux points</h2><Championnat /></div>
+          <div className="graphmodule"><br /><h2>Classement des conducteurs</h2></div>
+          <div className="graphmodule"><br /><h2>Notre API</h2></div>
 
         </div>
         <div className="copyright">

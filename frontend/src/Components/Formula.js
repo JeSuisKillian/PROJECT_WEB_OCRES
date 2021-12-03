@@ -21,7 +21,7 @@ export default function Formula() {
 
 
     <ul>
-      {<ul className="center" >2021 <br /><br /></ul>}
+      {<ul className="center" >Saison 2021 <br /><br /></ul>}
       <ul className="column_gap">
         {(typeof post != 'undefined') ? (
           post.map((item) => (

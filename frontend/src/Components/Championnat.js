@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-
+let ValueClas = [0][0];
 export default function Championnat() {
   const [race, setRace] = useState([])
 
   useEffect(() => {
     const fetchData = () => {
-      fetch('http://ergast.com/api/f1/2021/20/driverstandings.json')
+      fetch('http://ergast.com/api/f1/2021/1/driverstandings.json?limit=2')
         .then((response) => {
           return response.json()
 

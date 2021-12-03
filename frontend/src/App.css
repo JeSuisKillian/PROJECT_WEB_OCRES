@@ -128,8 +128,23 @@
   
 }
 
-
-
+h2
+{
+  display: inline
+}
+.Circuit{
+  display: flex;
+  flex-direction: row;
+}
+.DetailCircuit
+{
+  width: 40%;
+  text-align: left;
+}
+.ImgCircuit
+{
+  width: 75%;
+}
 .copyright {
   text-align: center;
   color: #f6f6f6;
