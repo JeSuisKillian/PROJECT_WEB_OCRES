@@ -3,6 +3,7 @@ import Graphique from './Components/Graphique'
 import Formula from './Components/Formula'
 import Circuit from './Components/Circuit'
 import Championnat from './Components/Championnat'
+import ChampionnatDriver from './Components/ChampionnatDriver'
 import Widget from './Components/Widget'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCog, faSignOutAlt, faGasPump, faChargingStation } from '@fortawesome/free-solid-svg-icons'
@@ -42,9 +43,9 @@ function App() {
             <div className="graphmodule graphmodule-formula"><br /><h2>Dernier résultat</h2><LastResult /></div>
           </div>
           <div className="graphmodule"><br /><h2>Informations sur le prochain circuit</h2><Circuit /></div>
-          <div className="graphmodule"><br /><h2>Course aux points</h2><Championnat /></div>
-          <div className="graphmodule"><br /><h2>Classement des conducteurs</h2></div>
-          <div className="graphmodule"><br /><h2>Notre API</h2></div>
+          <div className="graphmodule"><br /><h2>Course aux points</h2><ChampionnatDriver /></div>
+          <div className="graphmodule"><br /><h2>Classement des conducteurs</h2><Graphique /></div>
+          <div className="graphmodule"><br /><h2>Notre API</h2><Championnat /></div>
 
         </div>
         <div className="copyright">

@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-let ValueClas = [0][0];
-export default function Championnat() {
+export default function ChampionnatDriver() {
   const [race, setRace] = useState([])
+
+  let tableau = new Array();
+
 
   useEffect(() => {
     const fetchData = () => {
-      fetch('http://ergast.com/api/f1/2021/1/driverstandings.json?limit=2')
+      fetch(`http://ergast.com/api/f1/2021/20/driverstandings.json?limit=2`)
         .then((response) => {
           return response.json()
 
@@ -13,25 +15,33 @@ export default function Championnat() {
         .then((result) => {
           setRace(result.MRData.StandingsTable.StandingsLists[0])
         })
+        .then(function () {
+          (typeof race.DriverStandings != 'undefined') ? (
+            race.DriverStandings.map((item) => (
+
+              tableau.push(item.points)
+            )
+            )) : (
+            <li>Chargement des données ....</li>
+          )
+        })
+
     }
     fetchData()
 
   }, [])
   return (
-    <ul className="column_gap">
-      Season : {race.season}<br />
-      Round : {race.round}<br /><br />
+    <ul>
       {(typeof race.DriverStandings != 'undefined') ? (
         race.DriverStandings.map((item) => (
 
-          <li
-            key={item.position}>{item.Driver.givenName}&nbsp;{item.Driver.familyName}&nbsp;&nbsp;&nbsp;{item.points}&nbsp; wins : {item.wins}
-          </li>
+          <div>
+            {tableau[0]}
+          </div>
         )
-        )) :
-        (
-          <li>Chargement des données ....</li>
-        )}
+        )) : (
+        <li>Chargement des données ....</li>
+      )}
 
     </ul>
   )
