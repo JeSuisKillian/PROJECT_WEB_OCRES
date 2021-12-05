@@ -97,6 +97,7 @@
   background-color: rgba(197, 137, 7, 0.55);
   text-align: center;
   border-radius: 30px;
+  color: white;
 }
 
 .grapheBeau {
@@ -127,6 +128,7 @@
   background-color: rgba(197, 137, 7, 0.55);
   text-align: center;
   border-radius: 30px;
+  color: white;
 }
 
 .graphApi {
@@ -143,6 +145,7 @@
   text-align: center;
   border-radius: 30px;
   font-size: 90%;
+  color: white;
 }
 
 .graphmodule-formula {
@@ -150,6 +153,7 @@
   padding-bottom: 20px;
   width: 40%;
   font-size: 70%;
+  color: white;
 }
 
 .widgetmodule {
