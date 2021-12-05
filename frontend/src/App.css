@@ -50,7 +50,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 20px;
-  font-size: 18px;
+  font-size: 80%;
   margin-top: 30px;
   color: #2c3e50;
 }
@@ -68,7 +68,7 @@
 .logout {
   position: absolute;
   bottom: 10px;
-  font-size: 18px;
+  font-size: 80%;
   color: #f7b731;
   text-align: center;
   width: 100%;
@@ -89,7 +89,7 @@
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  height: 350px;
+  height: 30%;
   padding-left: 20px;
   padding-bottom: 140px;
   border: solid;
@@ -99,10 +99,13 @@
   border-radius: 30px;
 }
 
+
+
 .graphmodule-formula {
   height: auto;
   padding-bottom: 20px;
   width: 40%;
+  font-size: 70%;
 }
 
 .widgetmodule {
@@ -124,7 +127,7 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  font-size: 17px;
+
   
 }
 
@@ -171,3 +174,27 @@ h2
  text-decoration:none; 
  color: white;
 } 
+
+@media all and (max-width: 1110px){
+
+  .menu {
+    display: none;
+  }
+  .dashboard
+  {
+    flex-basis: 100%;
+  }
+  
+}
+
+@media all and (max-width: 1110px){
+
+  .menu {
+    display: none;
+  }
+  .dashboard
+  {
+    flex-basis: 100%;
+  }
+  
+}
