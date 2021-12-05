@@ -5,7 +5,7 @@ export default function NotreApi() {
 
     useEffect(() => {
         const fetchData = () => {
-            fetch('http://localhost:3000/posts')
+            fetch('http://localhost:3001/posts')
                 .then((response) => {
                     return response.json()
 

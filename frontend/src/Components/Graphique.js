@@ -1,66 +1,39 @@
 import React, { PureComponent } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
-const data = [
-    {
-        name: '14',
-        Hamilton: 221.5,
-        Verstappen: 226.5,
-        amt: 100,
-    },
-    {
-        name: '15',
-        Hamilton: 246.5,
-        Verstappen: 244.5,
-        amt: 2400,
-    },
-    {
-        name: '16',
-        Hamilton: 256.5,
-        Verstappen: 262.5,
-        amt: 2210,
-    },
-    {
-        name: '17',
-        Hamilton: 275.5,
-        Verstappen: 287.5,
-        amt: 2290,
-    },
-    {
-        name: '18',
-        Hamilton: 293.5,
-        Verstappen: 312.5,
-        amt: 2000,
-    },
-    {
-        name: '19',
-        Hamilton: 318.5,
-        Verstappen: 332.5,
-        amt: 2181,
-    },
-    {
-        name: '20',
-        Hamilton: 343.5,
-        Verstappen: 351.5,
-        amt: 2500,
-    },
-    {
-        name: '21',
-        Hamilton: 343.5,
-        Verstappen: 351.5,
-        amt: 2100,
-    },
-];
-
+import axios from 'axios';
 
 class Graphique extends PureComponent {
+    state = {
+        results: []
+    }
+
+    componentDidMount() {
+        axios.all([axios.get(`https://ergast.com/api/f1/drivers/hamilton/driverstandings.json`), axios.get(`https://ergast.com/api/f1/drivers/max_verstappen/driverstandings.json`)]).then(axios.spread((...responses) => {
+            const hamilton = responses[0].data.MRData.StandingsTable.StandingsLists.slice(-6)
+            const max_verstappen = responses[1].data.MRData.StandingsTable.StandingsLists.slice(-6)
+            let resultwip = []
+            for (let i = 0; i < 6; i++) {
+                resultwip.push(
+                    {
+                        name: hamilton[i].season,
+                        Hamilton: hamilton[i].DriverStandings[0].points,
+                        Verstappen: max_verstappen[i].DriverStandings[0].points
+                    }
+                )
+            }
+            this.setState({ results: resultwip });
+        })).catch(errors => {
+            // react on errors.
+        })
+    }
+
     render() {
         return (
             <ResponsiveContainer width="100%" height="100%">
                 <LineChart
                     width={500}
                     height={300}
-                    data={data}
+                    data={this.state.results}
                     margin={{
                         top: 5,
                         right: 30,
