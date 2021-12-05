@@ -25,10 +25,10 @@ export default function BasicExample() {
               </div>
               <ul>
                 <li className="active">
-                  <FontAwesomeIcon icon={faGasPump} /> <span><Link to="/">Formule 1</Link></span>
+                  <FontAwesomeIcon icon={faGasPump} /> <span><Link to="/" class="nounderline" >Formule 1</Link></span>
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faCog} /> <span><Link to="/pilot">Paramètres</Link></span>
+                  <FontAwesomeIcon icon={faCog} /> <span><Link to="/pilot" class="nounderline">Paramètres</Link></span>
                 </li>
               </ul>
 
