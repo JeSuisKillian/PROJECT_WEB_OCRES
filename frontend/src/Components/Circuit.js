@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Yas_Marina_Circuit from './Yas_Marina_Circuit.png';
+import Yas_Marina_Circuit from './Image/Yas_Marina_Circuit.png';
 
 export default function Circuit() {
     const [post, setPost] = useState([])
