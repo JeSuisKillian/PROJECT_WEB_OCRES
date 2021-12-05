@@ -20,7 +20,7 @@ export default function NotreApi() {
     return (
 
 
-        <ul>
+        <div>
             {<ul className="center" >Saison 2021 <br /><br /></ul>}
             <ul className="column_gap">
                 {(typeof post != 'undefined') ? (
@@ -38,6 +38,6 @@ export default function NotreApi() {
                     )}
             </ul>
 
-        </ul>
+        </div>
     )
 }

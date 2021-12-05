@@ -5,7 +5,7 @@ export default function LastResult() {
 
   useEffect(() => {
     const fetchData = () => {
-      fetch('http://ergast.com/api/f1/2021/20/results.json')
+      fetch('http://ergast.com/api/f1/2021/21/results.json')
         .then((response) => {
           return response.json()
 

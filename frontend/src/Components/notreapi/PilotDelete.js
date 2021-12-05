@@ -31,7 +31,7 @@ export default class PilotDelete extends React.Component {
                     </label>&nbsp;&nbsp;
                     <button type="submit">Delete</button>
                 </form>
-                <br />Liste des pilotes<br />
+                <br />Liste des pilotes : <br />
                 <IDPilote />
             </div>
         )

@@ -24,12 +24,12 @@ export default function IDPilote() {
             <ul >
                 {(typeof post != 'undefined') ? (
                     post.map((item) => (
-                        <li>
-                            {item.Nom}&nbsp;
-                            {item.Prenom}&nbsp;
+                        <ul>
+                            •&nbsp;{item.Prenom}&nbsp;
+                            {item.Nom}&nbsp;: &nbsp;
                             {item._id}<br />
 
-                        </li>
+                        </ul>
                     ))) :
                     (
                         <li>Chargement des données ....</li>

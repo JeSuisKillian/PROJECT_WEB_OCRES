@@ -27,7 +27,7 @@ export default function BasicExample() {
                 <li className="active">
                   <FontAwesomeIcon icon={faGasPump} /> <span><Link to="/" class="nounderline" >Formule 1</Link></span>
                 </li>
-                <li>
+                <li className="active">
                   <FontAwesomeIcon icon={faCog} /> <span><Link to="/pilot" class="nounderline">Paramètres</Link></span>
                 </li>
               </ul>
