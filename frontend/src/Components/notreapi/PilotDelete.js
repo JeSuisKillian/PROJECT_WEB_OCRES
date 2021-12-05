@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import IDPilote from '../IDPilote'
 
 export default class PilotDelete extends React.Component {
     state = {
@@ -30,6 +31,8 @@ export default class PilotDelete extends React.Component {
                     </label>&nbsp;&nbsp;
                     <button type="submit">Delete</button>
                 </form>
+                <br />Liste des pilotes<br />
+                <IDPilote />
             </div>
         )
     }

@@ -16,8 +16,8 @@ export default function Home() {
                 <div className="graphmodule graphmodule-formula"><br /><h2>Dernier résultat</h2><LastResult /></div>
             </div>
             <div className="graphmodule"><br /><h2>Informations sur le prochain circuit</h2><Circuit /></div>
-            <div className="graphmodule"><br /><h2>Course aux points</h2><ChampionnatDriver /></div>
-            <div className="graphmodule"><br /><h2>Classement des conducteurs</h2><Graphique /></div>
+            <div className="graphmodule"><br /><h2>Classement des conducteurs</h2><ChampionnatDriver /></div>
+            <div className="graphmodule"><br /><h2>Course aux points</h2><Graphique /></div>
             <div className="graphmodule"><br /><h2>Notre API</h2><NotreApiF1 /></div>
         </div>
     );
