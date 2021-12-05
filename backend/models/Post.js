@@ -2,17 +2,25 @@ const mongoose = require('mongoose');
 
 
 const PostSchema = mongoose.Schema({
-    title: {
+    Nom: {
         type: String,
         required: true
     },
-    description: {
+    Prenom: {
         type: String,
         required: true
     },
-    date: {
-        type: Date,
-        default: Date.now
+    Age: {
+        type: Number,
+        required: true
+    },
+    Ecurie: {
+        type: String,
+        required: true
+    },
+    Victoires: {
+        type: Number,
+        required: true
     }
 });
 

@@ -5,7 +5,7 @@ export default function NotreApi() {
 
     useEffect(() => {
         const fetchData = () => {
-            fetch('http://localhost:3001/posts')
+            fetch('http://localhost:3000/posts')
                 .then((response) => {
                     return response.json()
 
@@ -26,7 +26,11 @@ export default function NotreApi() {
                 {(typeof post != 'undefined') ? (
                     post.map((item) => (
                         <li>
-                            {item.title}
+                            Nom : {item.Nom}<br />
+                            Prenom : {item.Prenom}<br />
+                            Age : {item.Age}<br />
+                            Ecurie : {item.Ecurie}<br />
+                            Nombres de Victoires : {item.Victoires}<br /><br />
                         </li>
                     ))) :
                     (
