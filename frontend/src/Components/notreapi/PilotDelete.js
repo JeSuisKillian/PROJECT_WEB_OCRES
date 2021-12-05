@@ -3,17 +3,17 @@ import axios from 'axios';
 
 export default class PilotDelete extends React.Component {
     state = {
-        id: '',
+        _id: '',
     }
 
     handleChangeId = event => {
-        this.setState({ id: event.target.value });
+        this.setState({ _id: event.target.value });
     }
 
     handleSubmitDelete = event => {
         event.preventDefault();
 
-        axios.delete(`http://localhost:3001/posts/${this.state.id}`)
+        axios.delete(`http://localhost:3000/posts/${this.state._id}`)
             .then(res => {
                 console.log(res);
                 console.log(res.data);
@@ -25,9 +25,9 @@ export default class PilotDelete extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmitDelete}>
                     <label>
-                        Person ID:
-                        <input type="text" name="id" onChange={this.handleChangeId} />
-                    </label>
+                        ID du Pilote : &nbsp;
+                        <input type="text" name="_id" onChange={this.handleChangeId} />
+                    </label>&nbsp;&nbsp;
                     <button type="submit">Delete</button>
                 </form>
             </div>

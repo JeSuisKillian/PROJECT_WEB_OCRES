@@ -6,11 +6,11 @@ export default function Pilot() {
     return (
         <div>
             <div className="graphmodule">
-                <h2>Pilot</h2>
+                <h2>Ajouter un Pilote</h2><br /><br />
                 <PilotAdd />
             </div>
             <div className="graphmodule">
-                <h2>Pilot</h2>
+                <h2>Supprimer un Pilote</h2><br /><br />
                 <PilotDelete />
             </div>
         </div>

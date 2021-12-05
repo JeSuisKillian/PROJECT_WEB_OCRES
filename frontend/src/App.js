@@ -28,15 +28,10 @@ export default function BasicExample() {
                   <FontAwesomeIcon icon={faGasPump} /> <span><Link to="/">Formule 1</Link></span>
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faChargingStation} /> <span>Formule e</span>
-                </li>
-                <li>
                   <FontAwesomeIcon icon={faCog} /> <span><Link to="/pilot">Paramètres</Link></span>
                 </li>
               </ul>
-              {/*<div className="logout">
-                  <FontAwesomeIcon icon={faSignOutAlt} /> <span>Déconnexion</span>
-                </div>*/}
+
             </div>
           </div>
 
