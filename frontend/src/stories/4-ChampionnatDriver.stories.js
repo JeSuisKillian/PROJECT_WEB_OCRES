@@ -8,8 +8,6 @@ export default {
   title: 'ChampionnatDriver',
 };
 
-export const text = () => <div className="graphCourse"><br /><h2>Course aux points</h2><ChampionnatDriver /></div>;
+export const Affichage = () => (<div className="graphCourse"><br /><h2>Course aux points</h2><ChampionnatDriver /></div>);
 
-export const emoji = () => (
-  <div className="graphCourse"><br /><h2>Course aux points</h2><ChampionnatDriver /></div>
-);
+

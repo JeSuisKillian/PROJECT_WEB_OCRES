@@ -10,6 +10,4 @@ export default {
 
 export const Affichage = () => (<div className="graphmodule graphmodule-formula"><br /><h2>Liste des pilotes</h2><Formula /></div>);
 
-export const emoji = () => (
-  (<div className="graphmodule graphmodule-formula"><br /><h2>Liste des pilotes</h2><Formula /></div>)
-);
+
