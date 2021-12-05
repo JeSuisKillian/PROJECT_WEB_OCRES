@@ -238,7 +238,7 @@ h2
  color: white;
 } 
 
-@media all and (max-width: 1200px){
+@media all and (max-width: 1000px){
 
   .menu {
     display: none;
