@@ -1,25 +1,11 @@
-# Projet de fin de semestre
+Bonjour à tous,
 
-A lire impérativement avant de commencer quoi que ce soit, ce sont les règles que vous devrez appliquer tout au long du semestre:
+Bienvenue sur notre Dashboard KALD pour la formule 1 
 
-<p align="center">
- <a href="https://gitlab.com/Adrien_Kourganoff/instructions_web_ocres_ing4/-/blob/master/README.md">Règles pour le semestre</a>
-</p>
+Pour lancer proprement notre site, nous vous conseillons (et imposons :)) de lancer tout d'abord "npm start" dans le backend pour lancer notre API, puis faire "npm start" dans le frontend. Cela permet donc le bon fonctionnement de notre site avec l'ajout de notre API basée sur localhost:3000/posts précisément !
 
-## Introduction
+Notre site est responsive pour des changements de formats sur ordinateurs, un peu moins adapté pour les téléphones et tablettes.
 
-Ce repo git contient deux repertoires. L'un concerne la partie backend et l'autre la partie frontend.
+Vous trouverez également notre storybook en écrivant "npm run storybook" dans le cd frontend
 
-Les deux repertoires ont été initialisé pour vous aider à démarrer le projet dans les meilleures conditions.
-
-Chacun de ces repertoires contient un README.md qui vous pouvez vous approprier. Nous vous encourageons à le faire en y mettant toute les informations nécessaires à la compréhension de votre projet
-
-## Instructions
-
-Les instructions sont à retrouver dans le pdf instruction.pdf.
-
-**Le non respect de ces instructions entraînera des pertes de points alors prenez le temps de tout lire et de poser des questions si vous ne comprenez pas**
-
-Pour rappel, la probabilité de recevoir une réponse à un mail envoyé quelques heures avant le rendu est très proche de 0.
-
-test changement
+Bonne visite à vous !
