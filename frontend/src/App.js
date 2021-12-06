@@ -15,8 +15,22 @@ import Pilot from "./routes/pilot";
 export default function BasicExample() {
   return (
     <Router>
+
       <div className="App">
+        <div className="menu2">
+          <div className="menu2-content">
+
+
+
+            <FontAwesomeIcon icon={faGasPump} /> <span><Link to="/" class="nounderline" >Formule 1</Link></span>&nbsp;&nbsp;
+
+            <FontAwesomeIcon icon={faCog} /> <span><Link to="/pilot" class="nounderline">Paramètres</Link></span>
+
+
+          </div>
+        </div>
         <header className="App-header">
+
           <div className="menu">
             <div className="menu-content">
               <div className="logo-wrapper">
