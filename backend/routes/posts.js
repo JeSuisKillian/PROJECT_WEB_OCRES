@@ -53,7 +53,7 @@ router.delete('/:postId', async (req, res) => {
 //uptade un post specific
 router.patch('/:postId', async (req, res) => {
     try {
-        const uptadedPost = await Post.updateOne({ _id: req.params.postId }, { $set: { Nom: req.body.Nom } });
+        const uptadedPost = await Post.updateOne({ _id: req.params.postId }, { $set: { Nom: req.body.Nom, Prenom: req.body.Prenom, Age: req.body.Age, Ecurie: req.body.Ecurie, Victoires: req.body.Victoires } });
         res.json(uptadedPost);
     } catch (err) {
         res.json({ message: err });
